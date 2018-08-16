@@ -56,15 +56,14 @@ public class FuncionesTest {
             
         }
         
+        
     }
     
     
      
     @Test
     public void isSameReferenceTest(){
-         
-        Funciones msnt = new Funciones();
-        assertNotSame(msnt.getPropValue("key1"), msnt.getPropValue("key2"));
+        assertNotSame(Funciones.getPropValue("key1"), Funciones.getPropValue("key2"));
     }
     
 }
