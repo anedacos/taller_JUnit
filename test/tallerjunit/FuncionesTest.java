@@ -67,4 +67,10 @@ public class FuncionesTest {
         assertNotSame(msnt.getPropValue("key1"), msnt.getPropValue("key2"));
     }
     
+    @Test
+    public void test(){
+        MyAssertNullTest msnt = new MyAssertNullTest();
+        assertNotNull(msnt.getPropValue("key9"));
+    }
+    
 }

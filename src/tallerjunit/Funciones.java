@@ -31,4 +31,6 @@ public class Funciones {
         return appProps.get(key);
     }
     
+   
+    
 }
