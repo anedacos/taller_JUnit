@@ -48,6 +48,7 @@ public class FuncionesTest {
         int expResult = 120;
         int result = Funciones.factorial(number);
         assertTrue(expResult==result);
+        assertFalse(!(Funciones.factorial(0) == 1));
         int number2 = -1;
         try{
             Funciones.factorial(number2);
@@ -59,8 +60,6 @@ public class FuncionesTest {
         
     }
     
-    
-     
     @Test
     public void isSameReferenceTest(){
         assertNotSame(Funciones.getPropValue("key1"), Funciones.getPropValue("key2"));
