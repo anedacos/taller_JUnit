@@ -18,7 +18,7 @@ public class Funciones {
         if(number < 0)
             throw new UnsupportedOperationException();
         int ac = 1;
-        for(int i = 1; i < number; i++)
+        for(int i = 1; i <= number; i++)
             ac*=i;
         return ac;
     }
