@@ -55,16 +55,15 @@ public class FuncionesTest {
         } catch(UnsupportedOperationException e){
             
         }
-        // TODO review the generated test code and remove the default call to fail.
+        
+        
     }
     
     
      
     @Test
     public void isSameReferenceTest(){
-         
-        Funciones msnt = new Funciones();
-        assertNotSame(msnt.getPropValue("key1"), msnt.getPropValue("key2"));
+        assertNotSame(Funciones.getPropValue("key1"), Funciones.getPropValue("key2"));
     }
     
     @Test
