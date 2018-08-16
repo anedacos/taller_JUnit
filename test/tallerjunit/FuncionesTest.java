@@ -5,6 +5,7 @@
  */
 package tallerjunit;
 
+import java.util.HashMap;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -55,6 +56,15 @@ public class FuncionesTest {
             
         }
         // TODO review the generated test code and remove the default call to fail.
+    }
+    
+    
+     
+    @Test
+    public void isSameReferenceTest(){
+         
+        Funciones msnt = new Funciones();
+        assertNotSame(msnt.getPropValue("key1"), msnt.getPropValue("key2"));
     }
     
 }
